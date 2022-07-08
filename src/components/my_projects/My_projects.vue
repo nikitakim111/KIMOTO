@@ -53,12 +53,13 @@ export default {
             ],
             link_text: 'Смотреть',
 
-            methods: {
-                slide() {
-                    alert('test')
-                }
-            },
+            
         };
+    },
+    methods: {
+        slide() {
+            alert('test');
+        }
     },
 };
 </script>
