@@ -1,0 +1,117 @@
+@import '@/assets/variables.scss';
+
+.main__my-projects {
+    margin-bottom: 35px;
+}
+
+.my-projects__container {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.card-list {
+    display: flex;
+    // justify-content: space-between;
+}
+
+.my-projects__card-list {
+    margin-bottom: 45px;
+}
+
+.card-list__item {
+    display: flex;
+    flex-direction: column;
+    padding: 313px 50px 50px 50px;
+    width: 32%;
+    border: #CACACA 1px solid;
+}
+
+.card-list__item:not(:last-child) {
+    margin-right: auto;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .card-list__item {
+        width: 48%;
+    }
+
+    .card-list__item:last-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .card-list {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .card-list__item {
+        display: flex;
+        flex-shrink: 0;
+        width: 100%;
+    }
+
+    .card-list__item:last-child {
+        display: flex;
+    }
+
+    .show-more {
+        display: none;
+    }
+
+}
+
+.card-list__technology {
+    margin-left: auto;
+    font-size: 12px;
+    color: $light-text-color;
+}
+
+.card-list__subtitle {
+    font-size: 24px;
+    margin-bottom: 36px;
+}
+
+.card-list__descr {
+    margin-bottom: 35px;
+}
+
+.card-list__link {
+    margin-top: auto;
+    align-self: center;
+    color: $purple-color;
+    border-bottom: 1px solid $purple-color;
+}
+
+.show-more {
+    padding: 17px 35px;
+    border: 2px solid $purple-color;
+    border-radius: 30px;
+    color: $purple-color;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.pagination {
+    display: flex;
+    align-self: center;
+}
+
+.bullet {
+    height: 10px;
+    width: 10px;
+    background-color: #CACACA;
+    border-radius: 50px;
+}
+
+.pagination__bullet:not(:last-child) {
+    margin-right: 15px;
+}
+
+.my-projects__show-more {
+    align-self: center;
+    width: fit-content;
+}

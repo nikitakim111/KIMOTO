@@ -1,0 +1,15 @@
+@import '@/assets/variables.scss';
+
+
+.footer {
+    padding: 25px 0;
+    background-color: #000;
+    * {
+        color: $white-color;
+    }
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: 600;
+}

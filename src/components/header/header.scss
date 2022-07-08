@@ -1,0 +1,35 @@
+@import '@/assets/variables.scss';
+
+
+.header {
+    padding: 25px 0;
+    background-color: #000;
+    * {
+        color: $white-color;
+    }
+}
+
+.header-mb {
+    margin-bottom: 35px;
+}
+
+
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.header__nav-list {
+    display: flex;
+}
+
+.header__nav-item:not(:last-child) {
+    margin-right: 20px;
+}

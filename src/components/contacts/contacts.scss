@@ -1,0 +1,31 @@
+.main__contacts {
+    margin-bottom: 35px;
+}
+
+.contacts__info-container {
+    display: flex;
+}
+
+.mail {
+    font-size: 24px;
+}
+
+.contacts__mail {
+    margin-right: 30px;
+}
+
+.contacts__social-tg {
+    margin-right: 10px;
+}
+
+.social-tg {
+    background: url("@/assets/img/telegram_logo.svg") no-repeat;
+    width: 40px;
+    height: 40px;
+}
+
+.social-wt {
+    background: url("@/assets/img/whatsapp-icon.svg") no-repeat;
+    width: 40px;
+    height: 40px;
+}

@@ -1,0 +1,35 @@
+// COLORS
+$white-color: #fff;
+$purple-color: #9D5CD0;
+$dark-text-color: #333333;
+$light-text-color: #999999;
+
+// FONT SIZES
+$heading-fontSize: 48px;
+$main-fontSize: 16px;
+$small-fontSize: 12px;
+$header-fontSize: 18px;
+$subtitle-fontSize: 24px;
+
+// DEVISE SIZES
+$desktop: 1920px;
+$big-tablet: 1024px;
+$medium-tablet: 768px;
+$mobile: 320px;
+
+// DEVISE SIZES CONTAINERS
+$desktop-container: 1600px;
+$big-tablet-container: 924px;
+$medium-tablet-container: 668px;
+$mobile-container: 290px;
+
+.heading {
+    font-size: $heading-fontSize;
+    margin-bottom: 17px;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: $desktop-container;
+}
