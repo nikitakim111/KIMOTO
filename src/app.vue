@@ -13,11 +13,11 @@ import fonts from '@/assets/fonts.scss'
 import reset from '@/assets/reset.scss'
 // import variables from '@/assets/variables.scss'
 
-import Header from '@/components/header/Header.vue'
-import My_projects from '@/components/my_projects/My_projects.vue'
-import About_me from '@/components/about_me/About_me.vue'
-import Contacts from '@/components/contacts/Contacts.vue'
-import Footer from '@/components/footer/Footer.vue'
+import Header from '@/components/pages/header/Header.vue'
+import My_projects from '@/components/pages/my_projects/My_projects.vue'
+import About_me from '@/components/pages/about_me/About_me.vue'
+import Contacts from '@/components/pages/contacts/Contacts.vue'
+import Footer from '@/components/pages/footer/Footer.vue'
 
 export default {
 	components: { Header, My_projects, About_me, Contacts, Footer },

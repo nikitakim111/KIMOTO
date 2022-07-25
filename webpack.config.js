@@ -2,10 +2,8 @@ const path = require("path");
 const HTMLPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const { VueLoaderPlugin } = require("vue-loader");
 const ESLintPlugin = require("eslint-webpack-plugin");
-const webpack = require("webpack");
 
 let env = process.env.NODE_ENV === "production" ? "production" : "development";
 
@@ -57,10 +55,6 @@ module.exports = env = {
     ],
   },
   plugins: [
-    new webpack.DefinePlugin({
-      __VUE_OPTIONS_API__: true,
-      __VUE_PROD_DEVTOOLS__: false
-    }),
     new MiniCssExtractPlugin({
       filename: "style.[contenthash].css",
     }),
@@ -71,25 +65,6 @@ module.exports = env = {
     new VueLoaderPlugin(),
     new ESLintPlugin(),
   ],
-  optimization: {
-    minimizer: [
-      "...",
-      new ImageMinimizerPlugin({
-        minimizer: {
-          implementation: ImageMinimizerPlugin.imageminMinify,
-          options: {
-            // Lossless optimization with custom option
-            // Feel free to experiment with options for better result for you
-            plugins: [
-              ["gifsicle", { interlaced: true }],
-              ["jpegtran", { progressive: true }],
-              ["optipng", { optimizationLevel: 5 }],
-            ],
-          },
-        },
-      }),
-    ],
-  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),

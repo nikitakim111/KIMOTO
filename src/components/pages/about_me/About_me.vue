@@ -1,5 +1,5 @@
 <template>
-    <section class="about-me main__about-me">
+    <section class="about-me main__about-me" id="about-me-section">
         <div class="container">
             <h2 class="heading">Обо мне</h2>
             <p v-for="(skill, index) in about_me_info.skills" :key="index" :class="skill.class || 'paragraph'">

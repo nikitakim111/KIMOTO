@@ -1,5 +1,9 @@
 @import '@/assets/variables.scss';
 
+.removed-scroll {
+    overflow: hidden;
+}
+
 .main__my-projects {
     margin-bottom: 35px;
 }
@@ -7,11 +11,13 @@
 .my-projects__container {
     display: flex;
     flex-flow: column wrap;
+    overflow: hidden;
 }
 
 .card-list {
     display: flex;
-    // justify-content: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .my-projects__card-list {
@@ -26,8 +32,12 @@
     border: #CACACA 1px solid;
 }
 
-.card-list__item:not(:last-child) {
-    margin-right: auto;
+.card-list__item_show-card:nth-child(n + 4) {
+    display: none;
+}
+
+.card-list__item_mrb {
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -36,15 +46,16 @@
         width: 48%;
     }
 
-    .card-list__item:last-child {
+    .card-list__item_show-card:nth-child(3) {
         display: none;
     }
 }
 
 @media screen and (max-width: 678px) {
     .card-list {
-        overflow: hidden;
+        position: relative;
         width: 100%;
+        flex-wrap: nowrap;
     }
 
     .card-list__item {
@@ -61,6 +72,17 @@
         display: none;
     }
 
+    .card-list__item_mr-right {
+        margin-right: 20px;
+    }
+
+    .card-list__item_show-card:nth-child(3) {
+        display: flex;
+    }
+
+    .card-list__item_show-card:nth-child(n + 4) {
+        display: flex;
+    }
 }
 
 .card-list__technology {
@@ -96,19 +118,33 @@
 }
 
 .pagination {
-    display: flex;
+    display: none;
     align-self: center;
 }
 
+@media screen and (max-width: 678px) {
+    .pagination {
+        display: flex;
+    }
+}
+
 .bullet {
-    height: 10px;
-    width: 10px;
+    height: 15px;
+    width: 15px;
+    align-self: center;
     background-color: #CACACA;
     border-radius: 50px;
+    transition: all 0.5s;
+}
+
+.selected-bullet {
+    height: 13px;
+    width: 13px;
+    background-color: #999999;
 }
 
 .pagination__bullet:not(:last-child) {
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 .my-projects__show-more {

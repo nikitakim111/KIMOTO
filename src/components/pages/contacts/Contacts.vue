@@ -1,5 +1,5 @@
 <template>
-    <section class="contacts main__contacts">
+    <section class="contacts main__contacts" id="contacts-section">
         <div class="container">
             <h2 class="heading">
                 Контакты
