@@ -1,0 +1,64 @@
+<template>
+    <div class="white-panel target-panel">
+        <h4 class="target-panel__title">
+            Test
+        </h4>
+        <div class="target-panel__right-panel">
+            <button class="btn btn_border-radius_7 target-panel__btn">
+                Начать выполнение
+            </button>
+            <button class="edit-btn">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M26.4445 28.3334H5.66672V7.55558H18.1523L20.0412 5.66669H5.66672C5.16576 5.66669 4.68531 5.86569 4.33107 6.21993C3.97684 6.57416 3.77783 7.05461 3.77783 7.55558V28.3334C3.77783 28.8343 3.97684 29.3148 4.33107 29.669C4.68531 30.0232 5.16576 30.2222 5.66672 30.2222H26.4445C26.9455 30.2222 27.4259 30.0232 27.7801 29.669C28.1344 29.3148 28.3334 28.8343 28.3334 28.3334V14.1667L26.4445 16.0556V28.3334Z"
+                        fill="black" />
+                    <path
+                        d="M31.6673 5.51554L28.4845 2.33276C28.3433 2.19112 28.1755 2.07875 27.9907 2.00207C27.806 1.92539 27.6079 1.88593 27.4079 1.88593C27.2078 1.88593 27.0098 1.92539 26.825 2.00207C26.6403 2.07875 26.4725 2.19112 26.3312 2.33276L13.3829 15.3566L12.3345 19.8994C12.2899 20.1196 12.2946 20.347 12.3483 20.5652C12.402 20.7833 12.5034 20.9869 12.6452 21.1612C12.787 21.3355 12.9656 21.4762 13.1683 21.5732C13.371 21.6702 13.5926 21.7211 13.8173 21.7222C13.9334 21.735 14.0506 21.735 14.1668 21.7222L18.7473 20.7116L31.6673 7.66887C31.809 7.52762 31.9213 7.35981 31.998 7.17506C32.0747 6.9903 32.1142 6.79224 32.1142 6.5922C32.1142 6.39217 32.0747 6.1941 31.998 6.00935C31.9213 5.8246 31.809 5.65679 31.6673 5.51554ZM17.7651 18.9644L14.3084 19.7294L15.1112 16.3011L24.8579 6.48831L27.5212 9.15165L17.7651 18.9644ZM28.5884 8.08443L25.9251 5.42109L27.389 3.92887L30.0712 6.61109L28.5884 8.08443Z"
+                        fill="black" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</template>
+
+<script>
+
+export default {
+    data() {
+        return {}
+    }
+}
+</script>
+
+<style lang="scss" scoped>
+@import '@/assets/variables.scss';
+
+.btn_border-radius_7 {
+    border-radius: 7px;
+}
+
+.target-panel {
+    filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.07));
+}
+
+.target-panel__title {
+    margin: auto;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    max-width: 700px;
+    max-height: 48px;
+    overflow: overlay;
+}
+
+.target-panel__right-panel {
+    padding: 16px;
+    border-left: 1px solid #d3d3d3;
+}
+
+.target-panel__btn {
+    margin-right: 10px;
+    padding: 10px 35px;
+    font-size: 16px;
+}
+</style>

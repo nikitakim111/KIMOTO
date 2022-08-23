@@ -1,0 +1,42 @@
+.main__contacts {
+    margin-bottom: 35px;
+}
+
+.contacts__info-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mail {
+    font-size: 24px;
+    color: #000;
+}
+
+.contacts__mail {
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.social-block__icon:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-tg {
+    background: url("@/assets/img/telegram_logo.svg") no-repeat;
+}
+
+.social-wt {
+    background: url("@/assets/img/whatsapp-icon.svg") no-repeat;
+}
+
+@media screen and (max-width: 678px) {
+    .mail {
+        font-size: 20px;
+    }
+}
